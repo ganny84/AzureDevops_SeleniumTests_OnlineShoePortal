@@ -35,7 +35,8 @@ namespace OnlineShoePortal
             SignInPage.enterUserName();
             SignInPage.clickLogin();
             Assert.AreEqual("Both Username and Password field are required", SignInPage.txtUsrPwdErrorMsg);
-
+            
+            #close the session
             PropertiesCollections.driver.Close();
             PropertiesCollections.driver.Quit();
         }
