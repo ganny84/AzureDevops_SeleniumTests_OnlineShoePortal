@@ -38,7 +38,7 @@ namespace OnlineShoePortal
             RegistrationPage.enter_Password();
             RegistrationPage.click_Submit();
             Assert.AreEqual("User Registered Successfully !!!", SuccessRegistrationPage.SuccessMsg);
-
+            #close the session
             PropertiesCollections.driver.Close();
             PropertiesCollections.driver.Quit();
 
